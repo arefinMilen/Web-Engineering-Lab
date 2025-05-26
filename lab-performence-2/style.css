@@ -1,0 +1,26 @@
+.outer {
+    background-color: coral;
+    width: 100vw;
+    height: 100px;
+}
+#inner {
+    background-color: cadetblue;
+    width: 50vw;
+    height: auto;
+}
+div.div1 ,.div2{
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.div1{
+    margin-bottom: 30px;
+}
+.div2{
+    margin-bottom: 30px;
+}
+.div3{
+    margin-right: 20px;
+    padding-top: 10px;
+}

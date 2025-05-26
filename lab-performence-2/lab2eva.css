@@ -1,0 +1,17 @@
+nav{
+    background-color: black;
+    display: flex;
+     place-items: center;
+      justify-content: space-between
+    
+}
+h1{
+    color: white;
+     font-weight: 500px;
+      padding-left: 5px
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
