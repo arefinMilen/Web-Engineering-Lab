@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="/game(TIC-TAC-TOE)/style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎮 Tic Tac Toe</h1>
+        
+        <div class="player-setup" id="playerSetup">
+            <div class="player-inputs">
+                <div class="player-input">
+                    <label for="player1">Player 1 (X):</label>
+                    <input type="text" id="player1" placeholder="Enter name" maxlength="15">
+                </div>
+                <div class="player-input">
+                    <label for="player2">Player 2 (O):</label>
+                    <input type="text" id="player2" placeholder="Enter name" maxlength="15">
+                </div>
+            </div>
+            <button class="start-btn" onclick="startGame()">Start Game</button>
+        </div>
+
+        <div class="game-area hidden" id="gameArea">
+            <div class="game-info">
+                <div class="current-player" id="currentPlayer">Player 1's Turn</div>
+            </div>
+
+            <div class="game-board" id="gameBoard">
+                <div class="cell" onclick="makeMove(0)"></div>
+                <div class="cell" onclick="makeMove(1)"></div>
+                <div class="cell" onclick="makeMove(2)"></div>
+                <div class="cell" onclick="makeMove(3)"></div>
+                <div class="cell" onclick="makeMove(4)"></div>
+                <div class="cell" onclick="makeMove(5)"></div>
+                <div class="cell" onclick="makeMove(6)"></div>
+                <div class="cell" onclick="makeMove(7)"></div>
+                <div class="cell" onclick="makeMove(8)"></div>
+            </div>
+
+            <div class="game-controls">
+                <button class="reset-btn" onclick="resetGame()">Reset Game</button>
+            </div>
+
+            <div class="scoreboard">
+                <div class="score-item">
+                    <h3 id="player1Score">Player 1</h3>
+                    <div class="score" id="player1Wins">0</div>
+                </div>
+                <div class="score-item">
+                    <h3>Ties</h3>
+                    <div class="score" id="ties">0</div>
+                </div>
+                <div class="score-item">
+                    <h3 id="player2Score">Player 2</h3>
+                    <div class="score" id="player2Wins">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="result-popup" id="resultPopup">
+        <div class="result-content">
+            <h2 id="resultTitle">Game Over!</h2>
+            <p id="resultMessage">Result message here</p>
+            <button class="close-btn" onclick="closeResult()">Continue Playing</button>
+        </div>
+    </div>
+ 
+    <script src="/game(TIC-TAC-TOE)/app.js"></script>
+</body>
+</html>
