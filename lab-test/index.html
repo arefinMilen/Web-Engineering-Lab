@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Meal Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>My Meal Planner</h1>
+    <p id="greeting"></p>
+    <p id="current-date"></p>
+    <nav>
+      <ul>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#meal-planner">Meal Planner</a></li>
+        <li><a href="#useful-links">Useful Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Placeholder sections for navigation -->
+  <!-- <section id="recipes"><h2>Recipes</h2></section>
+  <section id="meal-planner"><h2>Meal Planner</h2></section> -->
+  
+
+<section id="recipes">
+  <h2>Recipe Catalog</h2>
+  <div class="recipes-grid">
+    <!-- ===== Recipe Card 1 ===== -->
+    <div class="recipe-card">
+      <img src="images/jack.jpg" alt="Pasta">
+      <h3>Delicious Pasta</h3>
+      <ul>
+        <li>Pasta</li>
+        <li>Tomato Sauce</li>
+        <li>Cheese</li>
+        <li>Spices</li>
+      </ul>
+      <p class="cooking-instructions">Boil pasta. Heat sauce. Mix together with cheese and spices.</p>
+      <button class="show-steps-btn">Show Steps</button>
+    </div>
+
+    <!-- ===== Recipe Card 2 ===== -->
+    <div class="recipe-card">
+      <img src="images/lichi.jpg" alt="Salad">
+      <h3>Fresh Salad</h3>
+      <ul>
+        <li>Lettuce</li>
+        <li>Tomato</li>
+        <li>Cucumber</li>
+        <li>Olive Oil</li>
+      </ul>
+      <p class="cooking-instructions">Chop veggies. Toss with olive oil and seasoning.</p>
+      <button class="show-steps-btn">Show Steps</button>
+    </div>
+
+    <!-- ===== Recipe Card 3 ===== -->
+    <div class="recipe-card">
+      <img src="images/mango.jpg" alt="Omelette">
+      <h3>Cheese Omelette</h3>
+      <ul>
+        <li>Eggs</li>
+        <li>Cheese</li>
+        <li>Salt & Pepper</li>
+      </ul>
+      <p class="cooking-instructions">Beat eggs. Pour into pan. Sprinkle cheese. Fold when cooked.</p>
+      <button class="show-steps-btn">Show Steps</button>
+    </div>
+  </div>
+</section>
+<section id="cooking-tip">
+  <h2>Cooking Tip of the Day</h2>
+  <button id="tip-btn">Get Tip</button>
+  <div id="tip-box"></div>
+</section>
+<section id="meal-planner">
+  <h2>Meal Planner</h2>
+  <form id="planner-form">
+    <input type="text" name="mealName" placeholder="Meal Name" required />
+    
+    <select name="day" required>
+      <option value="">Select Day</option>
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+      <option value="Sunday">Sunday</option>
+    </select>
+    
+    <label><input type="checkbox" name="type" value="Breakfast" /> Breakfast</label>
+    <label><input type="checkbox" name="type" value="Lunch" /> Lunch</label>
+    <label><input type="checkbox" name="type" value="Dinner" /> Dinner</label>
+    
+    <button type="submit">Add Meal</button>
+  </form>
+
+  <table id="planner-table">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Meal Name</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+<section id="useful-links">
+  <h2>Useful Links</h2>
+  <ul>
+    <li>
+      <a href="https://www.bbcgoodfood.com/" target="_blank">BBC Good Food (Cooking Blog)</a>
+    </li>
+    <li>
+      Check out this <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">cooking video tutorial</a> for amazing pasta.
+    </li>
+    <li>
+      <a href="https://www.allrecipes.com/">All Recipes Website</a>
+    </li>
+  </ul>
+</section>
+  <script src="scripts.js"></script>
+</body>
+</html>
