@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>navbar</title>
+</head>
+<body>
+    <nav>
+      <h1>
+        Shop With Me
+      </h1>
+      <a href="#" style="color: aliceblue">Account</a>
+      <div class="dropdown">
+    <button class="dropbtn">Items <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="#">Fruit Salad</a>
+      <a href="#">Milk Shake</a>
+      <a href="#">Coffee</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Offer <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="#">Family Pack</a>
+      <a href="#">Ifter</a>
+      <a href="#">Offer</a>
+    </div>
+  </div>
+
+      <div>
+        <input type="text" placeholder="🔍Type your item" />
+        <button
+          type="submit"
+          style="
+            color: black;
+            background-color: yellow;
+            border-radius: 5%;
+            border: none;
+          "
+        >
+          Search
+        </button>
+      </div>
+      <i style="color: aliceblue; padding: 5px" class="fa-solid fa-cart-plus"
+        ><sub style="padding: 5px">0</sub></i
+      >
+    </nav>
+</body>
+</html>
