@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/lab-2/lab2eva.css" />
+    <link rel="stylesheet" href="/lab-performence-2/lab2eva.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -16,6 +16,23 @@
         Shop With Me
       </h1>
       <a href="#" style="color: aliceblue">Account</a>
+      <div class="dropdown">
+    <button class="dropbtn">Items <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="#">Fruit Salad</a>
+      <a href="#">Milk Shake</a>
+      <a href="#">Coffee</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Offer <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="#">Family Pack</a>
+      <a href="#">Ifter</a>
+      <a href="#">Offer</a>
+    </div>
+  </div>
 
       <div>
         <input type="text" placeholder="🔍Type your item" />
@@ -35,5 +52,62 @@
         ><sub style="padding: 5px">0</sub></i
       >
     </nav>
+    <section class="hero-section">
+      <!-- <img src="./photo/hero-img.jpg" alt=""> -->
+    <button class="hero-btn">Order Now</button>
+  </section>
+    <section class="product-grid">
+   
+    <div class="product-card" data-main="29.99" data-discount="25">
+      <span class="discount-badge">25% OFF</span>
+      <img src="/lab-performence-2/photo/apple.jpg" alt="Product Image">
+      <h3>Apple</h3>
+      <p class="price">29.99 tk</p>
+      <button>Order Now</button>
+    </div>
+
+    
+    <div class="product-card" data-main="39.99" data-discount="25">
+      <span class="discount-badge">25% OFF</span>
+      <img src="/lab-performence-2/photo/mango.jpg" alt="Product Image">
+      <h3>Mango</h3>
+      <p class="price">39.99 tk</p>
+      <button>Order Now</button>
+    </div>
+
+    
+    <div class="product-card" data-main="49.99" data-discount="25">
+      <span class="discount-badge">25% OFF</span>
+      <img src="/lab-performence-2/photo/lichi.jpg" alt="Product Image">
+      <h3>Licchi</h3>
+      <p class="price">49.99 tk</p>
+      <button>Order Now</button>
+    </div>
+
+    <div class="product-card" data-main="49.99" data-discount="25">
+      <span class="discount-badge">25% OFF</span>
+      <img src="/lab-performence-2/photo/jack.jpg" alt="Product Image">
+      <h3>Jackfruit</h3>
+      <p class="price">49.99 tk</p>
+      <button>Order Now</button>
+    </div>
+  </section>
+  <!-- Cart Modal -->
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-content">
+    <span id="close-cart" class="close-cart">&times;</span>
+    <h2>Your Cart</h2>
+    <ul id="cart-list"></ul>
+    <div id="cart-total"></div>
+<button id="place-order-btn" style="margin-top:16px; background:#4caf50; color:#fff; border:none; border-radius:6px; padding:10px 24px; font-size:1em; cursor:pointer;">Place Order</button>
+    <div id="cart-total"></div>
+  </div>
+  
+</div>
+
+  <footer>
+    <p class="footer-text">Thank you for watching </p>
+  </footer>
+  <script src="/lab-performence-2/app.js"></script>
   </body>
 </html>
