@@ -1,0 +1,80 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.events table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.events th, .events td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.events th {
+    background-color: #0073e6;
+    color: white;
+}
+
+.events button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.events button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 0 0 8px 8px;
+}

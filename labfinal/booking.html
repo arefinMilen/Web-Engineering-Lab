@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portal - Campus Fest 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Fest 2025 - Student Portal</h1>
+        <nav>
+            <a href="student.html">Home</a>
+            <a href="logout.php">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome, Student!</h2>
+            <p>Browse upcoming events and book your tickets.</p>
+        </section>
+
+        <section class="events">
+            <h2>Available Events</h2>
+
+            <table id="eventsTable">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Tickets Available</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample Event Rows -->
+                    <tr>
+                        <td>Robotics Workshop</td>
+                        <td>Workshop</td>
+                        <td>2025-09-20</td>
+                        <td>5</td>
+                        <td><button onclick="bookTicket(this)">Book</button></td>
+                    </tr>
+                    <tr>
+                        <td>Live Band Night</td>
+                        <td>Music</td>
+                        <td>2025-09-21</td>
+                        <td>0</td>
+                        <td><button onclick="joinWaitingList(this)">Join Waiting List</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Your Active Bookings</h3>
+            <table id="myBookings">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows via PHP/MySQL -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Greenfield University</p>
+    </footer>
+
+    <script src="student.js"></script>
+</body>
+</html>

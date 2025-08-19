@@ -1,0 +1,22 @@
+Campus Fest 2025: The Online Ticket Adventure
+
+It’s the start of a new semester at Greenfield University, and students are buzzing with excitement. The student clubs have planned Campus Fest 2025, a week-long series of events including concerts, workshops, gaming competitions, and tech talks.
+
+In the past, students had to queue for hours to grab tickets for popular events like the Live Band Night or the Coding Hackathon, often leaving many disappointed. This year, the university launched an Online Event Ticket Booking System to solve the problem.
+
+Meet Amina, a second-year student eager to attend the Robotics Workshop and Art Expo. She logs into the portal, enters her student ID, and instantly sees all available events. Students can not book the same event twice. With the new interactive interface:
+
+- A green indicator shows tickets are available, while other sold-out events flash red, prompting her to join the waiting list if needed.
+- She books her Robotics Workshop ticket and immediately gets a pop-up confirmation.
+
+Meanwhile, her friend Rahim is trying to book for the Live Band Night. Using the dynamic filtering system, he sees the event is fully booked but is automatically placed on the waiting list.
+
+Behind the scenes, the event organizers, led by Ms. Patel, the student club coordinator, log into the manager panel:
+
+- She quickly updates ticket counts which can remove students from waiting list on the basis of new ticket count.
+- She monitors which events are most popular using the interactive JS-based dashboard, noting that the Hackathon has already filled half of its slots.
+- She approve students on the waiting list if tickets become available.
+Student registration with validation:
+SID in xxx-xx-xxxx format
+Valid email domain
+Strong password of minimum 9 characters that includes alphanumerical values and special characters.

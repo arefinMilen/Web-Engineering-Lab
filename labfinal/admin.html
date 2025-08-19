@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager Portal - Campus Fest 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Fest 2025 - Manager Portal</h1>
+        <nav>
+            <a href="manager.html">Dashboard</a>
+            <a href="logout.php">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome, Manager!</h2>
+            <p>Manage events, bookings, and waiting lists.</p>
+        </section>
+
+        <section class="manage-events">
+            <h2>Event Management</h2>
+            <form action="add_event.php" method="POST">
+                <input type="text" name="eventName" placeholder="Event Name" required>
+                <input type="date" name="eventDate" required>
+                <input type="number" name="tickets" placeholder="Total Tickets" required>
+                <select name="category" required>
+                    <option value="Music">Music</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Tech">Tech</option>
+                </select>
+                <button type="submit">Add Event</button>
+            </form>
+
+            <h3>All Events</h3>
+            <table id="allEvents">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Tickets Available</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows via PHP/MySQL -->
+                </tbody>
+            </table>
+
+            <h3>Waiting Lists</h3>
+            <table id="waitingLists">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Student Name</th>
+                        <th>SID</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows via PHP/MySQL -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Greenfield University</p>
+    </footer>
+
+    <script src="manager.js"></script>
+</body>
+</html>
